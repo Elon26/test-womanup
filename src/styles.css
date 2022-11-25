@@ -1,0 +1,253 @@
+.App {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+.create {
+  margin: 0 auto 20px auto;
+  width: 200px;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .create {
+    margin: 0 auto;
+  }
+}
+.button {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #34ffbf;
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  transition: border 0.3s ease 0s;
+}
+.button:hover {
+  border: 2px solid #00a724;
+}
+.popapButton {
+  margin: 20px auto 0px auto;
+  width: 100px;
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+.header {
+  font-weight: bold;
+  padding: 0px 0px 20px 0px;
+  border-bottom: 3px solid #000;
+}
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}
+.headerItem {
+  margin: 0 5px;
+  flex: 0 0 12.5%;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .headerItem {
+    margin: 0;
+    flex: 0 0 25%;
+  }
+}
+.body {
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .body {
+    padding: 0;
+  }
+}
+.taskItem {
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+.todoItem {
+  margin: 0 5px;
+  flex: 0 0 12.5%;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .todoItem {
+    margin: 0;
+    flex: 0 0 25%;
+  }
+}
+@media (max-width: 1200px) {
+  .title,
+  .description,
+  .deadline,
+  .inner {
+    margin: 0px 0px 10px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .title,
+  .description,
+  .deadline,
+  .inner {
+    margin: 0px 0px 5px 0px;
+  }
+}
+.delete {
+  margin: 0 auto;
+  max-width: 100px;
+  background-color: #ff4444;
+}
+@media (max-width: 768px) {
+  .delete {
+    margin: 0px 0px 10px 0px;
+  }
+}
+.change {
+  margin: 0 auto;
+  max-width: 100px;
+  background-color: #dfffa7;
+}
+@media (max-width: 768px) {
+  .change {
+    margin: 0px 0px 10px 0px;
+  }
+}
+.complete {
+  margin: 0 auto;
+  max-width: 100px;
+  background-color: #48fff9;
+}
+@media (max-width: 768px) {
+  .complete {
+    margin: 0px 0px 10px 0px;
+  }
+}
+.fileButton {
+  margin: 0 auto;
+  max-width: 100px;
+  background-color: #e0a5ff;
+}
+@media (max-width: 768px) {
+  .fileButton {
+    margin: 0px 0px 10px 0px;
+  }
+}
+.uploadButton {
+  margin: 20px auto;
+  max-width: 100px;
+  background-color: #e0a5ff;
+}
+.completed {
+  text-decoration: line-through;
+}
+.overdue {
+  color: red;
+  font-weight: bold;
+}
+.popap__body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.7s ease 0s, visibility 0.7s ease 0s;
+}
+.popap__body.active {
+  opacity: 1;
+  visibility: visible;
+}
+.popap__content {
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+}
+.popap__closeIcon {
+  font-size: 48px;
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  cursor: pointer;
+  transition: color 0.3s ease 0s;
+}
+.popap__closeIcon:hover {
+  color: #009ac8;
+}
+.popap__fileForm {
+  margin: 40px 0px 0px 0px;
+}
+.popap__progressbar {
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.popap__putFileInput {
+  font-size: 14px;
+}
+.form {
+  width: 600px;
+}
+@media (max-width: 768px) {
+  .form {
+    width: 250px;
+  }
+}
+.inputItem {
+  margin: 0px 0px 20px 0px;
+}
+.input {
+  width: calc(100% - 44px);
+  display: inline-block;
+  padding: 10px 20px;
+  box-shadow: inset 0 2px 3px 0 #e4e4e4;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  color: #717171;
+}
+.input:focus {
+  border: 2px solid #a1a1a1;
+}
+.input_error {
+  border: 2px solid red;
+}
+.inputLabel {
+  display: block;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+.inputError {
+  color: red;
+}
+.innerItem {
+  display: block;
+}
+.putButton {
+  display: block;
+  width: 100px;
+  margin: 20px auto 0px auto;
+  cursor: pointer;
+  position: relative;
+  right: 12px;
+}
+/*# sourceMappingURL=styles.css.map */
